@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		ChatGPT
+	</title>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="root"></div>
+
+	<button class="open-button" onclick="openForm()">Chat</button>
+
+	<div class="chat-popup" id="myForm">
+	  <form action="" class="form-container">
+      <form  class="form-container">
+		<h1>Click to open Chat</h1>
+	
+		<label for="msg"><b>Message</b></label>
+		<textarea placeholder="Type message.." name="msg" required></textarea>
+	
+		<button type="submit" class="btn">Send</button>
+		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+	  </form>
+	</div>
+	
+	<script>
+	function openForm() {
+	  document.getElementById("myForm").style.display = "block";
+	}
+	
+	function closeForm() {
+	  document.getElementById("myForm").style.display = "none";
+	}
+	</script>
+</body>
+
+</html>
